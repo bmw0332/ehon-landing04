@@ -177,7 +177,7 @@ small {
 .cta-note {
     display: block;
     font-size: 13px;
-    color: var(--color-border);
+    color: #000000;
     margin-top: 12px;
     text-align: center;
     width: 100%;
