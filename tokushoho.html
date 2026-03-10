@@ -1,98 +1,186 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>特定商取引法に基づく表記 | 世界に一冊のオーダーメイド絵本</title>
+    <title>特定商取引法に基づく表記 | オーダーメイド絵本 BASE Management Works</title>
     <meta name="description" content="特定商取引法に基づく表記">
     <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .legal-page {
+            padding: 120px 24px 80px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .legal-page__back {
+            margin-bottom: 32px;
+        }
+        .legal-page__back a {
+            color: var(--color-accent, #C46A5A);
+            text-decoration: none;
+            font-size: 14px;
+            transition: opacity 0.3s;
+        }
+        .legal-page__back a:hover {
+            opacity: 0.7;
+        }
+        .legal-page__title {
+            font-family: 'Noto Serif JP', serif;
+            font-size: clamp(24px, 4vw, 32px);
+            font-weight: 600;
+            color: #4A3F39;
+            margin-bottom: 48px;
+            letter-spacing: 0.05em;
+        }
+        .legal-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 48px;
+        }
+        .legal-table th,
+        .legal-table td {
+            padding: 16px 20px;
+            border-bottom: 1px solid #E8E2DC;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #4A3F39;
+            vertical-align: top;
+        }
+        .legal-table th {
+            width: 200px;
+            font-weight: 600;
+            background: #FAF8F5;
+            white-space: nowrap;
+        }
+        .legal-page__note {
+            background: #FFF8F0;
+            border: 1px solid #E8CFC8;
+            border-radius: 8px;
+            padding: 16px 20px;
+            font-size: 14px;
+            color: #C46A5A;
+            line-height: 1.8;
+        }
+        @media (max-width: 768px) {
+            .legal-page { padding: 100px 20px 60px; }
+            .legal-table th { width: 120px; font-size: 13px; padding: 12px; }
+            .legal-table td { font-size: 14px; padding: 12px; }
+        }
+        @media (max-width: 480px) {
+            .legal-table th, .legal-table td {
+                display: block;
+                width: 100%;
+            }
+            .legal-table th {
+                border-bottom: none;
+                padding-bottom: 4px;
+            }
+            .legal-table td {
+                padding-top: 4px;
+            }
+        }
+    </style>
 </head>
-
 <body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><h2><a href="index.html" style="color:inherit;text-decoration:none;">BASE Management Works</a></h2></div>
+        </div>
+    </nav>
 
     <div class="legal-page">
-        <div class="legal-page__inner">
-            <p class="legal-page__back"><a href="index.html">← トップに戻る</a></p>
-            <h1 class="legal-page__title">特定商取引法に基づく表記</h1>
+        <p class="legal-page__back"><a href="index.html">&larr; トップに戻る</a></p>
+        <h1 class="legal-page__title">特定商取引法に基づく表記</h1>
 
-            <table class="legal-table">
-                <tbody>
-                    <tr>
-                        <th>販売業者</th>
-                        <td>BASE Management Works株式会社<!-- ★要修正 --></td>
-                    </tr>
-                    <tr>
-                        <th>代表責任者</th>
-                        <td>【代表者名を入力】<!-- ★要修正 --></td>
-                    </tr>
-                    <tr>
-                        <th>所在地</th>
-                        <td>〒000-0000 【都道府県 市区町村 番地】<!-- ★要修正 --></td>
-                    </tr>
-                    <tr>
-                        <th>電話番号</th>
-                        <td>00-0000-0000<!-- ★要修正 --></td>
-                    </tr>
-                    <tr>
-                        <th>メールアドレス</th>
-                        <td>info@example.com<!-- ★要修正 --></td>
-                    </tr>
-                    <tr>
-                        <th>販売URL</th>
-                        <td>https://example.com<!-- ★要修正 --></td>
-                    </tr>
-                    <tr>
-                        <th>商品の名称</th>
-                        <td>オーダーメイド絵本制作サービス</td>
-                    </tr>
-                    <tr>
-                        <th>販売価格</th>
-                        <td>16,800円（税込）<br>追加1冊ごとに 2,800円（税込）</td>
-                    </tr>
-                    <tr>
-                        <th>商品代金以外の必要料金</th>
-                        <td>なし（送料込み・国内配送のみ）</td>
-                    </tr>
-                    <tr>
-                        <th>支払方法</th>
-                        <td>【クレジットカード／銀行振込 など】<!-- ★要修正 --></td>
-                    </tr>
-                    <tr>
-                        <th>支払時期</th>
-                        <td>ヒアリング内容確認後、制作開始前にお支払いいただきます。</td>
-                    </tr>
-                    <tr>
-                        <th>商品の引渡時期</th>
-                        <td>決済完了から約2週間で配送いたします。</td>
-                    </tr>
-                    <tr>
-                        <th>返品・交換について</th>
-                        <td>オーダーメイド商品のため、お客様都合による返品・交換はお受けできません。<br>ただし、製品に明らかな不備がある場合は、商品到着後7日以内にご連絡いただければ再制作にて対応いたします。
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>キャンセルについて</th>
-                        <td>制作開始前であればキャンセルを承ります。制作開始後のキャンセルはお受けできません。</td>
-                    </tr>
-                </tbody>
-            </table>
+        <table class="legal-table">
+            <tbody>
+                <tr>
+                    <th>販売業者</th>
+                    <td>BASE Management Works株式会社</td>
+                </tr>
+                <tr>
+                    <th>代表責任者</th>
+                    <td>山中慎介</td>
+                </tr>
+                <tr>
+                    <th>所在地</th>
+                    <td>〒130-0002 東京都墨田区業平<br>※詳細な住所は請求をいただいた場合、遅滞なく開示・提供いたします。</td>
+                </tr>
+                <tr>
+                    <th>電話番号</th>
+                    <td>請求をいただいた場合、遅滞なく開示・提供いたします。</td>
+                </tr>
+                <tr>
+                    <th>メールアドレス</th>
+                    <td>ehon_studio@base-mw.com</td>
+                </tr>
+                <tr>
+                    <th>販売URL</th>
+                    <td><a href="https://bmw0332.github.io/ehon-landing04/" target="_blank" rel="noopener">https://bmw0332.github.io/ehon-landing04/</a></td>
+                </tr>
+                <tr>
+                    <th>商品の名称</th>
+                    <td>オーダーメイド絵本制作サービス</td>
+                </tr>
+                <tr>
+                    <th>販売価格</th>
+                    <td>16,800円（税込）<br>同一内容の追加1冊ごとに 2,800円（税込）<br>発送完了後の追加注文 1冊あたり 3,300円（税込）</td>
+                </tr>
+                <tr>
+                    <th>商品代金以外の必要料金</th>
+                    <td>なし（国内配送料込み）<br>※海外への発送は承れません。</td>
+                </tr>
+                <tr>
+                    <th>支払方法</th>
+                    <td>クレジットカード（Visa、MasterCard、American Express、Discover、JCB、Diners Club）</td>
+                </tr>
+                <tr>
+                    <th>支払時期</th>
+                    <td>ヒアリング内容確認後、制作開始前にお支払いいただきます。</td>
+                </tr>
+                <tr>
+                    <th>商品の引渡時期</th>
+                    <td>決済完了から約2週間で配送いたします。</td>
+                </tr>
+                <tr>
+                    <th>商品仕様</th>
+                    <td>A5コンパクト（横148mm × 縦148mm）、全12ページ、イラスト制作</td>
+                </tr>
+                <tr>
+                    <th>返品・交換について</th>
+                    <td>オーダーメイド商品のため、お客様都合による返品・交換はお受けできません。ただし、製品に明らかな不備がある場合は、商品到着後7日以内にご連絡いただければ再制作にて対応いたします。</td>
+                </tr>
+                <tr>
+                    <th>キャンセルについて</th>
+                    <td>制作準備・着手のため、決済完了後のキャンセル・返金はお受けできません。</td>
+                </tr>
+                <tr>
+                    <th>データ保管期間</th>
+                    <td>個人情報および制作データは1年間保管し、保管期間満了後に消去いたします。保管期間内は追加注文（1冊あたり3,300円・税込）が可能です。</td>
+                </tr>
+            </tbody>
+        </table>
 
-            <p class="legal-page__note">※ 【 】内の項目は仮の情報です。実際の情報に差し替えてください。</p>
-        </div>
     </div>
 
     <footer class="footer">
-        <ul class="footer__links">
-            <li><a href="index.html">トップ</a></li>
-            <li><a href="tokushoho.html">特定商取引法に基づく表記</a></li>
-            <li><a href="privacy.html">プライバシーポリシー</a></li>
-            <li><a href="company.html">運営者情報</a></li>
-        </ul>
-        <p class="footer__copy">&copy; 2026 BASE Management Works株式会社</p>
+        <div class="container">
+            <div class="footer-content">
+                <nav class="footer-nav">
+                    <a href="index.html">トップ</a>
+                    <a href="tokushoho.html">特定商取引法に基づく表記</a>
+                    <a href="privacy.html">プライバシーポリシー</a>
+                    <a href="company.html">運営者情報</a>
+                </nav>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 BASE Management Works株式会社</p>
+            </div>
+        </div>
     </footer>
-
 </body>
-
 </html>
